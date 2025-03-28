@@ -8,4 +8,4 @@ services:
       - key: browserLimit
         value: 20
       - key: timeout
-        value: 120000
+        value: 250000
