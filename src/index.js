@@ -14,7 +14,7 @@ app.use(bodyParser.json({}))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 if (process.env.NODE_ENV !== 'development') {
-    let server = app.listen(port, () => { console.log(`Server running on port ${port}`) })
+    let server = app.listen(port, '0.0.0.0', async () => { console.log(`Server running on port ${port}`) })
     try {
         server.timeout = global.timeOut
     } catch (e) { }
