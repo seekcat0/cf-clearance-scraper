@@ -1,0 +1,11 @@
+services:
+  - type: web
+    runtime: docker
+    name: cf-clearance-scraper
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: browserLimit
+        value: 20
+      - key: timeout
+        value: 60000
